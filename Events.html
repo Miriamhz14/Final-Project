@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+
+<head>
+<style type="text/css">
+
+	img {
+		position: center;
+		width: 900px;
+		height: 550px;
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 3s;
+		-webkit-animation-timing-function: ease-in-out;
+	}
+	@-webkit-keyframes fade {
+		from {opacity: 0;}
+		to {opacity: 1;}
+
+	}
+	@keyframes fade {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+	.container {
+		background-color: #dcddc0;
+		border-style: solid;
+		border-width: 4px;
+		width: 900px;
+		height: 550px;
+		position: relative;
+		float: center;
+		margin-right: 60px;
+		margin-top: 50px;
+		margin-left: 400px;
+	}
+</style>
+</head>
+
+
+<header>
+<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+	<title> Events </title>
+	<h1> <span>M</span> ir - i - am </h1>
+	<h2> Fine Arts Photography </h2>
+</header>
+
+
+	
+<div class="main">
+ <ul class="mainul">
+ 	<li> <a href="Entrance Page.html"> Home </a> </li>
+ 	<li> <a href="About Me.html"> About Me </a> </li>
+
+ 	<div id="portfolio"> Portfolio <span class="arrow"> </span> 
+ 		<nav class="sub">
+ 			<a href="Early Work.html"> Early Works </a>
+ 			<a href="Digitals.html"> Digitals </a>
+ 			<a href=" Events.html"> Events </a> 
+ 		</nav>
+ 	</div>
+ 	<li> <a href="Services.html"> Services </a> </li>
+ 	<li> <a href="Contact Page.html"> Contact </a> </li>
+ 	<li> <a href="Store.html"> Store </a> </li>
+</ul>
+</div>
+
+<body>
+<div class="container"> 
+
+<img class="event" src="show.jpg"> 
+<img class="event" src="wedding.jpg">
+<img class="event" src="love.jpg"> 
+<img class="event" src="judge.jpg"> 
+<img class="event" src="lego.jpg"> 
+<img class="event" src="army.jpg">
+<img class="event" src="bowl.jpg"> 
+<img class="event" src="pced.jpg">
+<img class="event" src="kids.jpg"> 
+</div>
+
+
+
+<script>
+var slideIndex= 0;
+show ();
+
+function show() {
+	var i;
+	var x= document.getElementsByClassName("event");
+	for (i=0; i < x.length; i++){
+		x[i].style.display="none";
+	}
+	slideIndex++;
+	if (slideIndex > x.length) {slideIndex=1}
+		x[slideIndex-1].style.display="block";
+	setTimeout(show,3500);
+}
+</script> 
+
+
+<footer>
+<div class="footer">
+	<span class="follow"> Follow Me </span>
+	<p>
+ 		<a href="https://www.facebook.com"> <img class="foot" src="fb.jpg"> </a>
+		 <a href="https://twitter.com"> <img class="foot" src="twitter.jpg"> </a>
+ 		<a href="https://www.instagram.com"> <img class="foot" src="insta.jpg"> </a>
+ 		<a href="https://www.youtube.com/"> <img class="foot" src="youtube.jpg"> </a>
+ 	</p>
+ 	</div>
+ <div class="location">
+ <p>
+	<span class="tiny"> M </span> <span id="tiny"> ir - i - am </span> <br>
+	<span class="lil"> Fine Arts Photography </span> <br> 
+		<span id="lil"> 
+		150 Convent Ave<br>
+		New York, NY 10031 <br>
+		(212) 281-9240
+		</span>
+</p>
+</div>
+ </div>
+
+</footer>
+</body>
+</html>

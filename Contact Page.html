@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+
+	<!-- Simple contact form with a pop-up window -->
+<head>
+	<style type="text/css">
+	.container {
+		border-style: solid;
+		border-width: 4px;
+		width: 900px;
+		height: 550px;
+		position: relative;
+		float: center;
+		margin-right: 60px;
+		margin-top: 50px;
+		margin-left: 400px;
+	}
+	form {
+		width: 854px;
+		height: 504px;
+		padding: 20px;
+		color: #c0b283;
+		background-color: #373737;
+		border-style: solid;
+		font-size: 24px;
+	}
+	input {
+		width:300px;
+		height:30px;
+	}
+	.button {
+		height: 20px;
+		width: 10px;
+		font-size: 16px;
+		background-color: #373737;
+	}
+	</style>
+</head>
+
+
+<div class="header">
+<header>
+<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+	<title> Contact </title>
+	<h1> <span>M</span> ir - i - am </h1>
+	<h2> Fine Arts Photography </h2>
+</header>
+</div>
+
+
+	
+<div class="main">
+ <ul class="mainul">
+ 	<li> <a href="Entrance Page.html"> Home </a> </li>
+ 	<li> <a href="About Me.html"> About Me </a> </li>
+
+ 	<div id="portfolio"> Portfolio <span class="arrow"> </span> 
+ 		<nav class="sub">
+ 			<a href="Early Work.html"> Early Works </a>
+ 			<a href="Digitals.html"> Digitals </a>
+ 			<a href=" Events.html"> Events </a> 
+ 		</nav>
+ 	</div>
+ 	<li> <a href="Services.html"> Services </a> </li>
+ 	<li> <a href="Contact Page.html"> Contact </a> </li>
+ 	<li> <a href="Store.html"> Store </a> </li>
+</ul>
+</div>
+
+
+
+<body>
+<div class="container"> 
+<form>
+		Name: <br>
+	<input type="text" name="name"> <br>
+	<br>
+		Email Adress: <br>
+	<input type="text" name="emailaddress"> <br>
+	<br>
+
+		Phone Number: <br>
+	<input type="text" name="phonenumber"> <br>
+	<br>
+
+		Prefered Contact Method: <br>
+		Email
+	<input type="radio" name="email" value="email"> <br>
+		Phone
+	<input type="radio" name="email" value="phone"> <br>
+		<!-- Beginning of popup window -->
+	<div class="button">
+	<input onclick="myfunction()" type="button" name="submit" value="submit">
+	</div>
+	<br>
+	</form>
+	</div>
+
+
+
+	<script>
+	function myfunction() {
+		alert('THANK YOU');
+
+	}
+	</script>
+	<!-- End -->
+
+<footer>
+<div class="footer">
+	<span class="follow"> Follow Me </span>
+	<p>
+ 		<a href="https://www.facebook.com"> <img class="foot" src="fb.jpg"> </a>
+		 <a href="https://twitter.com"> <img class="foot" src="twitter.jpg"> </a>
+ 		<a href="https://www.instagram.com"> <img class="foot" src="insta.jpg"> </a>
+ 		<a href="https://www.youtube.com/"> <img class="foot" src="youtube.jpg"> </a>
+ 	</p>
+ 	</div>
+ <div class="location">
+ <p>
+	<span class="tiny"> M </span> <span id="tiny"> ir - i - am </span> <br>
+	<span class="lil"> Fine Arts Photography </span> <br> 
+		<span id="lil"> 
+		150 Convent Ave<br>
+		New York, NY 10031 <br>
+		(212) 281-9240
+		</span>
+</p>
+</div>
+ </div>
+	
+</footer>
+</body>
+</html>
